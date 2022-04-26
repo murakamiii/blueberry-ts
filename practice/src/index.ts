@@ -1,3 +1,5 @@
-const greeting: string = `Hello, `;
-const text = greeting + "world!";
+const greeting = `Hello, `,
+      target = "world!",
+      text = greeting + target;
+
 console.log(text);
