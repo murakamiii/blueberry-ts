@@ -1,3 +1,4 @@
-const bignum: bigint = (123n + 456n) * 2n;
+const str1: string = 'Hello';
+const str2: string = 'World!';
 
-console.log(bignum.toString());
+console.log(`${str1}, ${str2}`);
