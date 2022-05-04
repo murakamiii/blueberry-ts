@@ -1,4 +1,11 @@
-const val1: null = null;
-const val2: undefined = undefined;
+import { createInterface } from "readline";
 
-console.log(`${val1}, ${val2}`);
+const rl = createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+rl.question("What is your name? ", (answer) => {
+    console.log(`Hello, ${answer}!`);
+    rl.close();
+});
