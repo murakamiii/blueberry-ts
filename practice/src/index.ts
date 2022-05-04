@@ -1,19 +1,11 @@
-import { createInterface } from "readline";
-
-const rl = createInterface({
-    input: process.stdin,
-    output: process.stdout
-});
-
-rl.question("num? ", (line) => {
-    const num = Number(line);
-    if (Number.isNaN(num)) {
-        console.log("invalid input");
-        rl.close();
-        return;
+for (let i = 0; i <= 100; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+        console.log("FizzBuzz");
+    } else if (i % 3 === 0) {
+        console.log("Fizz");
+    } else if (i % 5 === 0) {
+        console.log("Buzz");
+    } else {
+        console.log(i);
     }
-    
-    const message = 0 <= num && num < 100 ? `${num} は 0..<100` : "${num} は 0..<100 ではありません";
-    console.log(message);
-    rl.close();
-});
+}
