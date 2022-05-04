@@ -1,11 +1,15 @@
-for (let i = 0; i <= 100; i++) {
+let fb: string = "";
+
+for (let i = 1; i <= 100; i++) {
     if (i % 3 === 0 && i % 5 === 0) {
-        console.log("FizzBuzz");
+        fb += "FizzBuzz ";
     } else if (i % 3 === 0) {
-        console.log("Fizz");
+        fb += "Fizz ";
     } else if (i % 5 === 0) {
-        console.log("Buzz");
+        fb += "Buzz ";
     } else {
-        console.log(i);
+        fb += `${i} `;
     }
 }
+
+console.log(fb);
