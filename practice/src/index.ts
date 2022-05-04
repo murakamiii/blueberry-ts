@@ -1,4 +1,4 @@
-const str1: string = 'Hello';
-const str2: string = 'World!';
+const val1: null = null;
+const val2: undefined = undefined;
 
-console.log(`${str1}, ${str2}`);
+console.log(`${val1}, ${val2}`);
