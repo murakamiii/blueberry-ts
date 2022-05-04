@@ -5,15 +5,12 @@ const rl = createInterface({
     output: process.stdout
 });
 
-rl.question("数値? ", (line) => {
-    const num: number = Number(line);
-
-    if (Number.isNaN(num)) {
-        console.log("数値を入力してください");
-        rl.close();
-        return;
+rl.question("パスワード? ", (password) => {
+    if (password === "password") {
+        console.log("ok");
+    } else {
+        console.log("Wrong password!");
     }
-    
-    console.log(`${Number(num) + 1000}!`);
+
     rl.close();
 });
