@@ -1,6 +1,9 @@
-const obj = {
-    foo: 123,
-    bar: "hi"
+const obj: {
+    foo: number,
+    bar: string
+} = {
+    foo: 1,
+    bar: "str"
 };
 
 const obj2 = {
