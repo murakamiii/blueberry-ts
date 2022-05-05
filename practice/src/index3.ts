@@ -36,3 +36,12 @@ const { foo, ...rest } = restObj;
 
 console.log(foo);
 console.log(rest);
+
+const mapObj: Map<string, number> = new Map();
+mapObj.set("foo", 1);
+
+console.log(mapObj.get("foo"));
+console.log(mapObj.has("foo"));
+console.log(mapObj.get("bar"));
+
+
