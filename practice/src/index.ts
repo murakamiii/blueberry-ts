@@ -3,5 +3,10 @@ const obj = {
     bar: "hi"
 };
 
-console.log(obj.foo);
-console.log(obj.bar);
+const obj2 = {
+    baz: true,
+    ...obj,
+    qux: "bye"
+};
+
+console.log(obj2);
