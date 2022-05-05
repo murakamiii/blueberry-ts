@@ -1,5 +1,5 @@
 type FooBar = {
-    foo: number;
+    readonly foo: number;
     bar: string;
     opt?: string;
 }
@@ -26,4 +26,13 @@ const obj2 = {
     qux: "bye"
 };
 
-console.log(obj2);
+const restObj = {
+    foo: 213,
+    bar: "str",
+    baz: true,
+}
+
+const { foo, ...rest } = restObj;
+
+console.log(foo);
+console.log(rest);
