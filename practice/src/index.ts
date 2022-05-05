@@ -1,7 +1,8 @@
-const obj: {
-    foo: number,
-    bar: string
-} = {
+type FooBar = {
+    foo: number;
+    bar: string;
+}
+const obj: FooBar = {
     foo: 1,
     bar: "str"
 };
