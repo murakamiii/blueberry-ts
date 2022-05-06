@@ -3,3 +3,7 @@ function hange(name: string): void {
 }
 
 hange("John");
+
+const divine = (name: string): void => console.log(`${name}さんは人間です。`);
+
+divine("John");
