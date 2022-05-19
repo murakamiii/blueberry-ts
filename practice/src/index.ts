@@ -1,19 +1,17 @@
-function hange(name: string): void {
-    console.log(`${name}さんを吊りました。`);
+type Animal = {
+    species: string;
 }
 
-hange("John");
-
-const divine = (name: string): void => console.log(`${name}さんは人間です。`);
-
-divine("John");
-
-type Person = {
+type Human = {
     name: string;
 }
 
-const people: Person[] = [ { name: "Gerd" }, { name: "Peter" } ];
-const getName = (person: Person): string => person.name;
+type Member = Animal | Human;
 
-const names = people.map(getName);
-console.log(names);
+const Tama: Member = {
+    species: "dog",
+};
+
+const Hyo: Member = {
+    name: "Hyo",
+};
