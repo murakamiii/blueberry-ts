@@ -15,3 +15,10 @@ const Tama: Member = {
 const Hyo: Member = {
     name: "Hyo",
 };
+
+type DemiHuman = Animal & Human;
+
+const Taro: DemiHuman = {
+    species: "dog",
+    name: "Taro",
+};
