@@ -22,3 +22,9 @@ const Taro: DemiHuman = {
     species: "dog",
     name: "Taro",
 };
+
+type Role = "seer" | "hunter";
+
+type Seer = {
+    divine(person: Human): boolean
+}
