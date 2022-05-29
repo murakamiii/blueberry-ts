@@ -4,23 +4,13 @@ type Animal = {
 
 type Human = {
     name: string;
+    age: number;
 }
 
 type Member = Animal | Human;
 
 const Tama: Member = {
     species: "dog",
-};
-
-const Hyo: Member = {
-    name: "Hyo",
-};
-
-type DemiHuman = Animal & Human;
-
-const Taro: DemiHuman = {
-    species: "dog",
-    name: "Taro",
 };
 
 type Role = "seer" | "hunter";
@@ -45,3 +35,9 @@ function numberWithSign(num: number, type: SignType | "none"): number {
 console.log(numberWithSign(5, "plus"));
 console.log(numberWithSign(5, "minus"));
 console.log(numberWithSign(5, "none"));
+
+type HumanKeys = keyof Human;
+
+let keys: HumanKeys = "name";
+keys = "age";
+// keys = "species";
